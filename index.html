@@ -7,7 +7,7 @@
     <title>Zidane Surya Nugraha - Portofolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
@@ -35,23 +35,22 @@
     <!-- Hero Section -->
     <header class="hero">
         <div class="container">
-            <div class="hero-content">
-                <p class="subtitle">AI Prompt Engineer & Full Stack Developer</p>
+            <div class="hero-content fade-in">
+                <p class="subtitle">IoT • Full Stack Agentic AI • Automation Control</p>
                 <h1>Zidane Surya <br> <span class="text-primary">Nugraha</span></h1>
                 <p class="description">
-                    Technology solution architect dengan fokus utama pada AI Prompt Engineering dan Full Stack Web
-                    Development.
-                    Spesialis dalam merancang arsitektur software dan mengintegrasikan LLM ke dalam aplikasi web yang
-                    skalabel.
+                    Technology Solution Architect dengan keahlian merancang solusi <i>end-to-end</i>. Fokus pada
+                    pengembangan IoT & Embedded System, aplikasi Full Stack berbasis Agentic AI, serta implementasi PLC
+                    dan Sistem Kendali Otomasi.
                 </p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">Hubungi Saya</a>
                     <a href="#projects" class="btn btn-outlined">Lihat Proyek</a>
                 </div>
             </div>
-            <div class="hero-visual">
+            <div class="hero-visual fade-in">
                 <div class="profile-frame">
-                    <img src="profile.jpg" alt="Zidane Surya Nugraha" class="profile-img">
+                    <img src="image/profile.jpg" alt="Zidane Surya Nugraha" class="profile-img">
                 </div>
             </div>
         </div>
@@ -61,16 +60,14 @@
     <section id="about" class="section">
         <div class="container">
             <h2 class="section-title">Tentang Saya</h2>
-            <div class="about-card">
+            <div class="about-card fade-in">
                 <p>
-                    Saya adalah seorang technology solution architect yang berfokus pada AI Prompt Engineering dan Full
-                    Stack Web Development.
-                    Didukung oleh keahlian dalam merancang alur program (software architecture), saya berspesialisasi
-                    dalam merancang, membangun,
-                    dan mengintegrasikan Large Language Models (LLM) ke dalam aplikasi web yang fungsional dan skalabel.
-                    Saat ini saya sedang memperluas keahlian dalam Workflow Automation (n8n) dan Data Science (Google
-                    Cloud)
-                    untuk menciptakan solusi AI end-to-end yang lebih cerdas dan efisien.
+                    Saya adalah seorang Technology Solution Architect dengan tiga fokus utama: <strong>IoT & Embedded
+                        System</strong>, <strong>Full Stack Website & Agentic AI</strong>, dan <strong>Automation System
+                        Control</strong> (mencakup PLC & Sistem Kendali). Saya berspesialisasi dalam merancang
+                    arsitektur perangkat lunak <i>end-to-end</i>, mulai dari pengembangan aplikasi web berbasis AI
+                    cerdas (seperti Agentic Browser), hingga implementasi perangkat keras dan sistem otomasi
+                    terintegrasi.
                 </p>
             </div>
         </div>
@@ -80,7 +77,7 @@
     <section id="experience" class="section bg-light">
         <div class="container">
             <h2 class="section-title">Pengalaman Profesional</h2>
-            <div class="education-item"> <!-- Using same style class for consistency -->
+            <div class="education-item fade-in"> <!-- Using same style class for consistency -->
                 <div class="edu-icon">
                     <span class="material-icons-outlined">work</span>
                 </div>
@@ -97,13 +94,28 @@
                 </div>
             </div>
             <br>
-            <div class="education-item">
+            <div class="education-item fade-in">
+                <div class="edu-icon">
+                    <span class="material-icons-outlined">class</span>
+                </div>
+                <div class="edu-content">
+                    <h3>Asisten Praktikum - Algoritma dan Pemrograman Lanjut</h3>
+                    <span class="edu-subtitle">Laboratorium Komputer, Fakultas Ilmu Terapan | Feb 2026 - Jun 2026</span>
+                    <ul class="activities">
+                        <li>Membimbing mahasiswa dalam memahami konsep algoritma lanjutan dan struktur data kompleks.
+                        </li>
+                        <li>Memberikan arahan teknis dan evaluasi pada implementasi program C++.</li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div class="education-item fade-in">
                 <div class="edu-icon">
                     <span class="material-icons-outlined">class</span>
                 </div>
                 <div class="edu-content">
                     <h3>Asisten Praktikum - Algoritma Dasar & Pemrograman</h3>
-                    <span class="edu-subtitle">Laboratorium Komputer, Fakultas Ilmu Terapan | Sep 2025 - Sekarang</span>
+                    <span class="edu-subtitle">Laboratorium Komputer, Fakultas Ilmu Terapan | Sep 2025 - Jan 2026</span>
                     <ul class="activities">
                         <li>Membimbing mahasiswa baru dalam menyelesaikan modul praktikum (C++).</li>
                         <li>Memberikan bantuan teknis, live debugging, dan pengarahan konsep dasar logika pemrograman.
@@ -123,10 +135,12 @@
             <div class="projects-grid">
 
                 <!-- Project 1 -->
-                <article class="project-card">
+                <article class="project-card fade-in">
                     <a href="https://github.com/Zidanes-hub/Simulation-Chatbot-AI-Interview-Job-IT-Support-.git"
-                        target="_blank"
-                        style="text-decoration: none; color: inherit; display: block; height: 100%; display: flex; flex-direction: column;">
+                        target="_blank" class="project-link">
+                        <div class="project-image">
+                            <img src="image/chatbot.png" alt="AI Interview Chatbot">
+                        </div>
                         <div class="project-content">
                             <div class="project-label">Web App & AI Integration</div>
                             <h3>AI Interview CHATBOT</h3>
@@ -143,9 +157,11 @@
                 </article>
 
                 <!-- Project 2 -->
-                <article class="project-card">
-                    <a href="https://github.com/Zidanes-hub/Smart_Schedule_Import.git" target="_blank"
-                        style="text-decoration: none; color: inherit; display: block; height: 100%; display: flex; flex-direction: column;">
+                <article class="project-card fade-in">
+                    <a href="https://github.com/Zidanes-hub/Smart_Schedule_Import.git" target="_blank" class="project-link">
+                        <div class="project-image">
+                            <img src="image/smart_schedule.png" alt="Smart Schedule Importer">
+                        </div>
                         <div class="project-content">
                             <div class="project-label">Productivity Tool</div>
                             <h3>Smart Schedule Importer</h3>
@@ -155,6 +171,43 @@
                                 <span>React</span>
                                 <span>Vite</span>
                                 <span>Tailwind</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card fade-in">
+                    <a href="https://github.com/Zidanes-hub/Telkom-food-Hub.git" target="_blank" class="project-link">
+                        <div class="project-image">
+                            <img src="image/telkom_foodhub.jpg" alt="Telkom Foodhub">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-label">Web Development</div>
+                            <h3>Telkom Foodhub</h3>
+                            <p>Pengembangan website terintegrasi untuk mendukung dan mempromosikan UMKM kuliner di sekitar Telkom University.</p>
+                            <div class="project-meta">
+                                <span>Full Stack</span>
+                                <span>Web App</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card fade-in">
+                    <a href="#" target="_blank" class="project-link">
+                        <div class="project-image">
+                            <!-- Belum ada gambar -->
+                        </div>
+                        <div class="project-content">
+                            <div class="project-label">Computer Vision & IoT</div>
+                            <h3>Smart Garage System</h3>
+                            <p>Sistem garasi otomatis pintar yang mengintegrasikan Computer Vision untuk mendeteksi dan mengenali plat nomor kendaraan.</p>
+                            <div class="project-meta">
+                                <span>Computer Vision</span>
+                                <span>Python</span>
+                                <span>IoT</span>
                             </div>
                         </div>
                     </a>
@@ -170,7 +223,7 @@
             <h2 class="section-title">Keahlian & Tools</h2>
             <div class="skills-grid">
 
-                <div class="skill-category">
+                <div class="skill-category fade-in">
                     <div class="icon-box blue">
                         <span class="material-icons-outlined">code</span>
                     </div>
@@ -184,12 +237,14 @@
                     </div>
                 </div>
 
-                <div class="skill-category">
+                <div class="skill-category fade-in">
                     <div class="icon-box red">
                         <span class="material-icons-outlined">psychology</span>
                     </div>
                     <h3>AI & Data</h3>
                     <div class="tags">
+                        <span>Agentic AI</span>
+                        <span>Browser OS</span>
                         <span>Prompt Engineering</span>
                         <span>Gemini API</span>
                         <span>Google Cloud</span>
@@ -197,7 +252,7 @@
                     </div>
                 </div>
 
-                <div class="skill-category">
+                <div class="skill-category fade-in">
                     <div class="icon-box yellow">
                         <span class="material-icons-outlined">settings_suggest</span>
                     </div>
@@ -206,6 +261,20 @@
                         <span>Software Architecture</span>
                         <span>Problem Solving</span>
                         <span>Workflow Automation</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <div class="icon-box" style="background: rgba(34, 197, 94, 0.1); color: #22c55e;">
+                        <span class="material-icons-outlined">security</span>
+                    </div>
+                    <h3>Security & Control</h3>
+                    <div class="tags">
+                        <span>Network Security</span>
+                        <span>Cryptography</span>
+                        <span>Penetration Testing</span>
+                        <span>PID Control</span>
+                        <span>PLC</span>
                     </div>
                 </div>
 
@@ -224,7 +293,7 @@
                 <div class="edu-content">
                     <h3>Telkom University</h3>
                     <span class="edu-subtitle">D3 Teknologi Komputer | 2024 - 2027 (Diharapkan)</span>
-                    <p class="focus">Mahasiswa Semester 3 Aktif. Fokus: IoT, Embedded System, Network Admin, Web
+                    <p class="focus">Mahasiswa Semester 4 Aktif. Fokus: IoT, Embedded System, Network Admin, Web
                         Programming.</p>
                     <div class="project-label" style="margin-top: 16px;">Pengalaman Panitia</div>
                     <ul class="activities">
@@ -239,8 +308,10 @@
     <section id="certificates" class="section bg-light">
         <div class="container">
             <h2 class="section-title">Sertifikat & Bootcamp</h2>
-            <div class="cert-grid">
+            <div class="cert-grid fade-in">
                 <ul class="cert-list">
+                    <li>CCNA Routing and Switching</li>
+                    <li>Network and Automation Course (On-going)</li>
                     <li>Gemini for Data Scientists and Analysts (Google Cloud, Nov 2025)</li>
                     <li>Basic AI Certificate (Dicoding Indonesia, Nov 2025)</li>
                     <li>AI x Softdev 2025 Bootcamp (GDG Telkom Univ, Aug-Sep 2025)</li>
@@ -255,7 +326,7 @@
     <!-- Contact & Footer -->
     <footer id="contact">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-content fade-in">
                 <h2>Mari Terhubung</h2>
                 <p>Jangan ragu untuk menghubungi saya untuk kolaborasi atau sekadar menyapa.</p>
 
