@@ -77,52 +77,54 @@
     <section id="experience" class="section bg-light">
         <div class="container">
             <h2 class="section-title">Pengalaman Profesional</h2>
-            <div class="education-item fade-in"> <!-- Using same style class for consistency -->
-                <div class="edu-icon">
-                    <span class="material-icons-outlined">work</span>
+            <div class="timeline">
+                <div class="education-item fade-in"> <!-- Using same style class for consistency -->
+                    <div class="edu-icon">
+                        <span class="material-icons-outlined">work</span>
+                    </div>
+                    <div class="edu-content">
+                        <h3>Research Student (Web Developer)</h3>
+                        <span class="edu-subtitle">Stas RG Laboratory, Fakultas Ilmu Terapan - Bandung | Nov 2025 -
+                            Sekarang</span>
+                        <ul class="activities">
+                            <li>Mengembangkan sistem pemantauan berbasis web penuh untuk GreenHouse IoT.</li>
+                            <li>Merancang dan mengimplementasikan dashboard front-end (React) untuk visualisasi data sensor
+                                real-time (suhu, kelembaban, intensitas cahaya).</li>
+                            <li>Membangun API (Node.js/Express) untuk mengelola data ingestion dari perangkat IoT.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="edu-content">
-                    <h3>Research Student (Web Developer)</h3>
-                    <span class="edu-subtitle">Stas RG Laboratory, Fakultas Ilmu Terapan - Bandung | Nov 2025 -
-                        Sekarang</span>
-                    <ul class="activities">
-                        <li>Mengembangkan sistem pemantauan berbasis web penuh untuk GreenHouse IoT.</li>
-                        <li>Merancang dan mengimplementasikan dashboard front-end (React) untuk visualisasi data sensor
-                            real-time (suhu, kelembaban, intensitas cahaya).</li>
-                        <li>Membangun API (Node.js/Express) untuk mengelola data ingestion dari perangkat IoT.</li>
-                    </ul>
+                
+                <div class="education-item fade-in">
+                    <div class="edu-icon">
+                        <span class="material-icons-outlined">class</span>
+                    </div>
+                    <div class="edu-content">
+                        <h3>Asisten Praktikum - Algoritma dan Pemrograman Lanjut</h3>
+                        <span class="edu-subtitle">Laboratorium Komputer, Fakultas Ilmu Terapan | Feb 2026 - Jun 2026</span>
+                        <ul class="activities">
+                            <li>Membimbing mahasiswa dalam memahami konsep algoritma lanjutan dan struktur data kompleks.
+                            </li>
+                            <li>Memberikan arahan teknis dan evaluasi pada implementasi program C++.</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <br>
-            <div class="education-item fade-in">
-                <div class="edu-icon">
-                    <span class="material-icons-outlined">class</span>
-                </div>
-                <div class="edu-content">
-                    <h3>Asisten Praktikum - Algoritma dan Pemrograman Lanjut</h3>
-                    <span class="edu-subtitle">Laboratorium Komputer, Fakultas Ilmu Terapan | Feb 2026 - Jun 2026</span>
-                    <ul class="activities">
-                        <li>Membimbing mahasiswa dalam memahami konsep algoritma lanjutan dan struktur data kompleks.
-                        </li>
-                        <li>Memberikan arahan teknis dan evaluasi pada implementasi program C++.</li>
-                    </ul>
-                </div>
-            </div>
-            <br>
-            <div class="education-item fade-in">
-                <div class="edu-icon">
-                    <span class="material-icons-outlined">class</span>
-                </div>
-                <div class="edu-content">
-                    <h3>Asisten Praktikum - Algoritma Dasar & Pemrograman</h3>
-                    <span class="edu-subtitle">Laboratorium Komputer, Fakultas Ilmu Terapan | Sep 2025 - Jan 2026</span>
-                    <ul class="activities">
-                        <li>Membimbing mahasiswa baru dalam menyelesaikan modul praktikum (C++).</li>
-                        <li>Memberikan bantuan teknis, live debugging, dan pengarahan konsep dasar logika pemrograman.
-                        </li>
-                        <li>Mengembangkan keterampilan komunikasi untuk menerjemahkan logika pemrograman yang kompleks.
-                        </li>
-                    </ul>
+                
+                <div class="education-item fade-in">
+                    <div class="edu-icon">
+                        <span class="material-icons-outlined">class</span>
+                    </div>
+                    <div class="edu-content">
+                        <h3>Asisten Praktikum - Algoritma Dasar & Pemrograman</h3>
+                        <span class="edu-subtitle">Laboratorium Komputer, Fakultas Ilmu Terapan | Sep 2025 - Jan 2026</span>
+                        <ul class="activities">
+                            <li>Membimbing mahasiswa baru dalam menyelesaikan modul praktikum (C++).</li>
+                            <li>Memberikan bantuan teknis, live debugging, dan pengarahan konsep dasar logika pemrograman.
+                            </li>
+                            <li>Mengembangkan keterampilan komunikasi untuk menerjemahkan logika pemrograman yang kompleks.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -197,8 +199,17 @@
                 <!-- Project 4 -->
                 <article class="project-card fade-in">
                     <a href="#" target="_blank" class="project-link">
-                        <div class="project-image">
-                            <!-- Belum ada gambar -->
+                        <div class="project-image hover-reveal">
+                            <!-- Opsi 1: Hover Reveal (Gambar 3D terlihat awal, Gambar Lapangan terlihat saat kursor diarahkan) -->
+                            <!-- Ganti src dengan path gambarmu -->
+                            <img src="image/design_3d.jpeg" alt="3D Design Smart Garage" class="img-front">
+                            <img src="image/Mockup_real.jpeg" alt="Implementasi Lapangan Smart Garage" class="img-back">
+                            
+                            <!-- Opsi 2: Side-by-side (Jika ingin keduanya langsung terlihat, ubah class 'hover-reveal' di atas menjadi 'dual-image' dan hapus class img-front/img-back) -->
+                            <!--
+                            <img src="image/design_3d.jpeg" alt="3D Design">
+                            <img src="image/Mockup_real.jpeg" alt="Implementasi Lapangan">
+                            -->
                         </div>
                         <div class="project-content">
                             <div class="project-label">Computer Vision & IoT</div>
@@ -286,19 +297,21 @@
     <section id="education" class="section">
         <div class="container">
             <h2 class="section-title">Pendidikan</h2>
-            <div class="education-item">
-                <div class="edu-icon">
-                    <span class="material-icons-outlined">school</span>
-                </div>
-                <div class="edu-content">
-                    <h3>Telkom University</h3>
-                    <span class="edu-subtitle">D3 Teknologi Komputer | 2024 - 2027 (Diharapkan)</span>
-                    <p class="focus">Mahasiswa Semester 4 Aktif. Fokus: IoT, Embedded System, Network Admin, Web
-                        Programming.</p>
-                    <div class="project-label" style="margin-top: 16px;">Pengalaman Panitia</div>
-                    <ul class="activities">
-                        <li>Panitia PKKMB Fakultas Ilmu Terapan 2025 - Divisi LO (Sep 2025)</li>
-                    </ul>
+            <div class="timeline">
+                <div class="education-item fade-in">
+                    <div class="edu-icon">
+                        <span class="material-icons-outlined">school</span>
+                    </div>
+                    <div class="edu-content">
+                        <h3>Telkom University</h3>
+                        <span class="edu-subtitle">D3 Teknologi Komputer | 2024 - 2027 (Diharapkan)</span>
+                        <p class="focus">Mahasiswa Semester 4 Aktif. Fokus: IoT, Embedded System, Network Admin, Web
+                            Programming.</p>
+                        <div class="project-label" style="margin-top: 16px;">Pengalaman Panitia</div>
+                        <ul class="activities">
+                            <li>Panitia PKKMB Fakultas Ilmu Terapan 2025 - Divisi LO (Sep 2025)</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

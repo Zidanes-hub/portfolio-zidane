@@ -413,11 +413,55 @@ h3 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .project-card:hover .project-image img {
     transform: scale(1.05);
+}
+
+/* Option 1: Dual Image (Side by Side) */
+.project-image.dual-image {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-image.dual-image img {
+    width: 50%;
+    border-right: 2px solid #fff; /* Memberikan pemisah tipis */
+}
+
+.project-image.dual-image img:last-child {
+    border-right: none;
+}
+
+/* Option 2: Hover Reveal (Before & After) */
+.project-image.hover-reveal {
+    position: relative;
+}
+
+.project-image.hover-reveal .img-front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 1;
+}
+
+.project-image.hover-reveal .img-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+}
+
+.project-card:hover .project-image.hover-reveal .img-front {
+    opacity: 0;
+}
+
+.project-card:hover .project-image.hover-reveal .img-back {
+    opacity: 1;
 }
 
 .project-card:hover {
@@ -470,7 +514,57 @@ h3 {
     border-radius: 4px;
 }
 
-/* Education Section */
+/* Education & Experience Section (Timeline Layout) */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 48px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 24px;
+    top: 20px;
+    bottom: 20px;
+    width: 2px;
+    background: rgba(26, 115, 232, 0.15); /* Light primary line */
+    transform: translateX(-50%);
+}
+
+.timeline .education-item {
+    margin: 0 0 32px 0;
+    width: 100%;
+    position: relative;
+}
+
+.timeline .education-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline .education-item::before {
+    content: '';
+    position: absolute;
+    left: -24px;
+    top: 60px; /* Align with center of icon */
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--md-sys-color-primary);
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 4px rgba(26, 115, 232, 0.1);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.timeline .education-item:hover::before {
+    background: var(--md-sys-color-tertiary);
+    transform: translate(-50%, -50%) scale(1.3);
+    box-shadow: 0 0 0 6px rgba(251, 188, 4, 0.2);
+}
+
 .education-item {
     background: #ffffff;
     border-radius: var(--border-radius-lg);
@@ -489,6 +583,20 @@ h3 {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(26, 115, 232, 0.1);
     border-color: rgba(26, 115, 232, 0.2);
+}
+
+/* Hover Animation for Icon */
+.education-item:hover .edu-icon {
+    animation: iconPulse 1.5s infinite;
+    background: var(--md-sys-color-primary);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+@keyframes iconPulse {
+    0% { box-shadow: 0 0 0 0 rgba(26, 115, 232, 0.4); }
+    70% { box-shadow: 0 0 0 15px rgba(26, 115, 232, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(26, 115, 232, 0); }
 }
 
 .edu-icon {
