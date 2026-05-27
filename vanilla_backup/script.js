@@ -45,3 +45,30 @@ const observer = new IntersectionObserver((entries, observer) => {
 document.querySelectorAll('.fade-in').forEach(element => {
     observer.observe(element);
 });
+
+// Dark Mode Toggle
+const themeToggleBtn = document.getElementById('theme-toggle');
+if (themeToggleBtn) {
+    const themeIcon = document.getElementById('theme-icon');
+    const body = document.body;
+
+    // Check for saved theme in localStorage
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme === 'dark') {
+        body.classList.add('dark-mode');
+        themeIcon.textContent = 'light_mode';
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        let theme = 'light';
+        if (body.classList.contains('dark-mode')) {
+            theme = 'dark';
+            themeIcon.textContent = 'light_mode';
+        } else {
+            themeIcon.textContent = 'dark_mode';
+        }
+        // Save to localStorage
+        localStorage.setItem('theme', theme);
+    });
+}
