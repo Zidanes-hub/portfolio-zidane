@@ -8,6 +8,8 @@ import CountUp from './components/CountUp';
 import { PillNav } from './components/PillNav';
 import LightRays from './components/LightRays';
 import VariableProximity from './components/VariableProximity';
+import Services from './components/Services';
+import { ScrollProgress, BackToTop } from './components/Enhancements';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -69,6 +71,7 @@ function App() {
               { id: 'about', label: 'Tentang', href: '#about' },
               { id: 'experience', label: 'Pengalaman', href: '#experience' },
               { id: 'projects', label: 'Proyek', href: '#projects' },
+              { id: 'services', label: 'Layanan', href: '#services' },
               { id: 'skills', label: 'Keahlian', href: '#skills' },
               { id: 'certificates', label: 'Sertifikat', href: '#certificates' },
               { id: 'contact', label: 'Kontak', href: '#contact' }
@@ -106,6 +109,9 @@ function App() {
         </div>
       </nav>
 
+      <ScrollProgress />
+      <BackToTop />
+
       {/* Mobile Sidebar */}
       <div className={`mobile-sidebar ${isMenuOpen ? 'open' : ''}`}>
         <button 
@@ -119,6 +125,7 @@ function App() {
           <a href="#about" onClick={() => setIsMenuOpen(false)}>Tentang</a>
           <a href="#experience" onClick={() => setIsMenuOpen(false)}>Pengalaman</a>
           <a href="#projects" onClick={() => setIsMenuOpen(false)}>Proyek</a>
+          <a href="#services" onClick={() => setIsMenuOpen(false)}>Layanan</a>
           <a href="#skills" onClick={() => setIsMenuOpen(false)}>Keahlian</a>
           <a href="#certificates" onClick={() => setIsMenuOpen(false)}>Sertifikat</a>
           <a href="#contact" onClick={() => setIsMenuOpen(false)}>Kontak</a>
@@ -363,6 +370,8 @@ function App() {
         </div>
       </section>
 
+      <Services />
+
       <section id="skills" className="section bg-light">
         <div className="container">
           <h2 className="section-title">Keahlian & Tools</h2>
@@ -471,6 +480,12 @@ function App() {
             <h2>Mari Terhubung</h2>
             <p>Jangan ragu untuk menghubungi saya untuk kolaborasi atau sekadar menyapa.</p>
             <div className="social-links-row">
+              <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="social-btn whatsapp" title="WhatsApp">
+                <svg viewBox="0 0 24 24" className="social-icon">
+                  <path fill="#25D366" d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zM12.05 21.84c1.834 0 3.518-.54 4.942-1.47l.358-.214-2.418-.63-.218.205a8.27 8.27 0 0 1-3.95.97c-4.557 0-8.27-3.713-8.273-8.27 0-2.207.835-4.286 2.353-5.855a8.23 8.23 0 0 1 5.92-2.436c4.556 0 8.268 3.713 8.27 8.268 0 1.944-.68 3.777-1.92 5.21l-.232.276-2.55-.667.18-.217a6.6 6.6 0 0 0 1.525-4.232c0-3.635-2.964-6.6-6.6-6.6-1.762 0-3.418.687-4.664 1.933a6.58 6.58 0 0 0-1.933 4.665c.003 3.637 2.967 6.6 6.6 6.6z" />
+                </svg>
+                <span>WhatsApp</span>
+              </a>
               <a href="mailto:zidanesuryanugraha@gmail.com" className="social-btn gmail" title="Email Saya">
                 <svg viewBox="0 0 24 24" className="social-icon">
                   <path fill="#EA4335" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
